@@ -2,7 +2,7 @@ import React from "react";
 
 function Product() {
   return (
-    <article className="product">
+    <article className="Product">
       <h2>PRODUCTNAME</h2>
       <p>1234,-</p>
       <img src="#" alt="somename" />
