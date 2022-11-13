@@ -1,10 +1,12 @@
 import React from "react";
 
-function Basket() {
+function Basket(props) {
   return (
     <section className="Basket">
       <ul>
-        <li>SomeProduct x3, 1234,-</li>
+        {props.cart.map((item) => (
+          <li>{item.productdisplayname} x {item.amount}, {item.amount * item.price},-</li>
+        ))}
       </ul>
       <button>Buy now</button>
     </section>
