@@ -23,6 +23,8 @@ img {
 .App {
   display: grid;
   grid-template-columns: auto 200px;
+  justify-content: space-around;
+  column-gap: 2rem;
 }
 
 .Header {
@@ -44,5 +46,5 @@ img {
 
 
 .Basket {
-
+  grid-column: 2 / 3;
 }
